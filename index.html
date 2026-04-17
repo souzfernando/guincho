@@ -59,34 +59,62 @@
     }
 
     .whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease;
-  z-index: 999;
-}
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+      z-index: 999;
+    }
 
-.whatsapp-btn:hover {
-  transform: scale(1.1);
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .instagram-btn {
+      display: inline-flex;
+      margin-top: 20px;
+      background: #E1306C;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+
+    .instagram-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
 }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <img src="logo.png" alt="Everton Guincho" class="logo">
     <h1>Site em Construção</h1>
     <p>Estamos trabalhando para trazer algo incrível para você.<br>
     Volte em breve!</p>
 
     <div class="loader"></div>
+    <a href="https://www.instagram.com/everton.guincho" target="_blank" class="instagram-btn">
+      <svg viewBox="0 0 24 24" width="28" height="28">
+        <path fill="white" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm4.75-2.75a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/>
+      </svg>
+    </a>
 
     <footer>
       © 2026 • Todos os direitos reservados
@@ -94,10 +122,10 @@
   </div>
 
   <a href="https://wa.me/5514996301577?text=Ol%C3%A1%2C%20preciso%20de%20guincho%2024h%20urgente" target="_blank" class="whatsapp-btn">
-  <svg viewBox="0 0 32 32" width="24" height="24">
-    <path fill="white" d="M16 0C7.163 0 0 6.716 0 15c0 2.64.76 5.103 2.073 7.243L0 32l10.06-2.613A16.1 16.1 0 0 0 16 30c8.837 0 16-6.716 16-15S24.837 0 16 0zm0 27.5c-2.32 0-4.56-.6-6.53-1.73l-.47-.27-5.97 1.55 1.6-5.73-.3-.49A12.3 12.3 0 0 1 3.5 15c0-6.34 5.61-11.5 12.5-11.5S28.5 8.66 28.5 15 22.89 27.5 16 27.5zm6.88-8.66c-.38-.19-2.26-1.1-2.61-1.23-.35-.13-.61-.19-.87.19-.26.38-1 1.23-1.23 1.48-.23.26-.46.29-.84.1-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.9-2.23-2.13-2.61-.23-.38-.02-.59.17-.78.17-.17.38-.46.57-.69.19-.23.26-.38.38-.63.13-.26.06-.48-.03-.67-.1-.19-.87-2.09-1.2-2.86-.32-.76-.65-.66-.87-.67l-.74-.01c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2 0 1.89 1.37 3.72 1.56 3.97.19.26 2.7 4.12 6.54 5.78.91.39 1.62.62 2.17.79.91.29 1.74.25 2.4.15.73-.11 2.26-.92 2.58-1.81.32-.89.32-1.65.23-1.81-.1-.16-.35-.26-.73-.45z"/>
-  </svg>
-</a>
+    <svg viewBox="0 0 32 32" width="24" height="24">
+      <path fill="white" d="M16 0C7.163 0 0 6.716 0 15c0 2.64.76 5.103 2.073 7.243L0 32l10.06-2.613A16.1 16.1 0 0 0 16 30c8.837 0 16-6.716 16-15S24.837 0 16 0zm0 27.5c-2.32 0-4.56-.6-6.53-1.73l-.47-.27-5.97 1.55 1.6-5.73-.3-.49A12.3 12.3 0 0 1 3.5 15c0-6.34 5.61-11.5 12.5-11.5S28.5 8.66 28.5 15 22.89 27.5 16 27.5zm6.88-8.66c-.38-.19-2.26-1.1-2.61-1.23-.35-.13-.61-.19-.87.19-.26.38-1 1.23-1.23 1.48-.23.26-.46.29-.84.1-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.9-2.23-2.13-2.61-.23-.38-.02-.59.17-.78.17-.17.38-.46.57-.69.19-.23.26-.38.38-.63.13-.26.06-.48-.03-.67-.1-.19-.87-2.09-1.2-2.86-.32-.76-.65-.66-.87-.67l-.74-.01c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2 0 1.89 1.37 3.72 1.56 3.97.19.26 2.7 4.12 6.54 5.78.91.39 1.62.62 2.17.79.91.29 1.74.25 2.4.15.73-.11 2.26-.92 2.58-1.81.32-.89.32-1.65.23-1.81-.1-.16-.35-.26-.73-.45z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
