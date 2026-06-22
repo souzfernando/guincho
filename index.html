@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta charset="utf-8">
+    <title>Guincho 24h em Brotas e Região | Everton Guincho</title>
 
-<meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRE2E35DBF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<title>Guincho 24h em Brotas e Região | Everton Guincho</title>
+      gtag('config', 'G-TRE2E35DBF');
+  </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRE2E35DBF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Product Landing Page Template" name="keywords">
+  <meta content="Product Landing Page Template" name="description">
 
-  gtag('config', 'G-TRE2E35DBF');
-</script>
+  <meta name="description" content="Serviço de guincho 24 horas em Brotas e região. Atendimento rápido para carros, motos, caminhonetes, vans e tratores pequenos. Ligue agora!">
 
-<meta name="description" content="Serviço de guincho 24 horas em Brotas e região. Atendimento rápido para carros, motos, caminhonetes, vans e tratores pequenos. Ligue agora!">
+  <meta name="keywords" content="guincho 24h, guincho brotas, reboque, socorro mecânico, guincho carro, guincho moto, guincho caminhonete">
 
-<meta name="keywords" content="guincho 24h, guincho brotas, reboque, socorro mecânico, guincho carro, guincho moto, guincho caminhonete">
+  <meta name="author" content="Everton Guincho">
 
-<meta name="author" content="Everton Guincho">
+  <meta name="robots" content="index, follow">
 
-<meta name="robots" content="index, follow">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Guincho 24h em Brotas | Everton Guincho">
@@ -33,179 +35,703 @@
 <meta property="og:url" content="https://evertonguincho.com.br">
 <meta property="og:image" content="https://evertonguincho.com.br/logo.png">
 
-<link rel="icon" href="logo.png" type="image/png">
+<!-- Favicon -->
+<link rel="icon" href="img/logo.png" type="image/png">
 
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #1f2933, #111827);
-      color: #fff;
-      text-align: center;
-    }
+<!-- CSS Libraries -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="lib/slick/slick.css" rel="stylesheet">
+<link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-    .container {
-      max-width: 500px;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      opacity: 0.85;
-      margin-bottom: 30px;
-    }
-
-    .loader {
-      width: 60px;
-      height: 60px;
-      border: 6px solid rgba(255,255,255,0.2);
-      border-top-color: #38bdf8;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.85rem;
-      opacity: 0.6;
-    }
-
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease;
-      z-index: 999;
-    }
-
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-    }
-
-    .instagram-btn {
-      display: inline-flex;
-      margin-top: 20px;
-      background: #E1306C;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease;
-    }
-
-    .instagram-btn:hover {
-      transform: scale(1.1);
-    }
-
-    .logo {
-  display: block;
-  margin: 0 auto 20px;
-  width: 400px;
-}
-
-@media (max-width: 480px) {
-
-  .container {
-    padding: 20px 15px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .logo {
-    width: 180px; /* antes tava gigante */
-    margin-bottom: 15px;
-  }
-
-  .loader {
-    width: 50px;
-    height: 50px;
-    border-width: 5px;
-  }
-
-  .whatsapp-btn {
-    width: 55px;
-    height: 55px;
-    bottom: 15px;
-    right: 15px;
-  }
-
-  .instagram-btn {
-    width: 45px;
-    height: 45px;
-  }
-
-  footer {
-    font-size: 0.75rem;
-    margin-top: 30px;
-  }
-}
-  </style>
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
 
-  <div class="container">
-    <img src="logo.png" alt="Everton Guincho" class="logo">
-    <h1>Site em Construção</h1>
-    <p>Estamos trabalhando para trazer algo incrível para você.<br>
-    Volte em breve!</p>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Start -->
+    <div id="nav">
+        <div class="navbar navbar-expand-md bg-light navbar-light">
+            <a href="/" class="navbar-brand">Everton Guincho</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="loader"></div>
-    <a href="https://www.instagram.com/everton.guincho" target="_blank" class="instagram-btn">
-      <svg viewBox="0 0 24 24" width="28" height="28">
-        <path fill="white" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm4.75-2.75a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/>
-      </svg>
-    </a>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#solicitar-guincho" class="nav-link">Socorro 24h</a></li>
+                    <li class="nav-item"><a href="#feature-mini" class="nav-link">Serviços</a></li>
+                    <!--<li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#testimonial" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#faqs" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Nav End -->
 
-    <footer>
-      © 2026 • Todos os direitos reservados
-    </footer>
-  </div>
+    <!-- Header Start-->
+    <div id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-md-none d-block">
+                    <div class="header-img">
+                        <img src="img/logo.png" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-content">
+                        <h2>Guincho 24h em Brotas SP<br>Reboque <span>Rápido e Seguro</span></h2>
+                        <p>
+                            Atendimento 24 horas em Brotas e região para carros, motos, caminhonetes e vans.
+                            Transporte de veículos e equipamentos até 3.500 kg, com atendimento em rodovias,
+                            áreas urbanas e também na área rural. Saída estratégica atendendo São Paulo,
+                            Minas Gerais, Goiás e Paraná.
+                        </p>
+                        <a class="btn" href="#solicitar-guincho">Pedir Guincho Agora</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-block d-none"> 
+                    <div class="header-img">
+                        <img src="img/logo.png" alt="Product Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End-->
 
-<a href="https://wa.me/5514996301577?text=Ol%C3%A1%2C%20preciso%20de%20guincho%2024h%20urgente"
-   target="_blank"
-   class="whatsapp-btn"
-   onclick="gtag('event','generate_lead',{'event_category':'whatsapp','event_label':'clique_botao','transport_type':'beacon'});">
+<!-- Mini Feature Start-->
+<div id="feature-mini">
+    <div class="container">
+        <div class="row feature-row">            
+            <div class="col feature-col">
+                <div class="feature-item">
+                    <i class="fa fa-truck-pickup"></i>
+                    <h3>Reboque de Veículos</h3>
+                    <p>Atendimento completo para remoção e transporte seguro do veículo.</p>
+                </div>
+            </div>
+            <div class="col feature-col">
+                <div class="feature-item">
+                    <i class="fa fa-cogs"></i>
+                    <h3>Transporte de Cargas</h3>
+                    <p>Transporte de máquinas e equipamentos com até 3.500 kg de carga.</p>
+                </div>
+            </div>
+            <div class="col feature-col">
+                <div class="feature-item">
+                    <i class="fa fa-car-battery"></i>
+                    <h3>Auxílio de Bateria</h3>
+                    <p>Suporte para transferência de carga e partida do veículo no local.</p>
+                </div>
+            </div>
+            <div class="col feature-col">
+                <div class="feature-item">
+                    <i class="fa fa-gas-pump"></i>
+                    <h3>Pane Seca</h3>
+                    <p>Abastecimento emergencial realizado diretamente no local atendido.</p>
+                </div>
+            </div>
+            <div class="col feature-col">
+                <div class="feature-item">
+                    <i class="fa fa-tools"></i>
+                    <h3>Troca de Estepe</h3>
+                    <p>Substituição de pneu no local com rapidez e total segurança.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mini Feature End-->
 
-  <svg viewBox="0 0 32 32" width="24" height="24">
-    <path fill="white" d="M16 0C7.163 0 0 6.716 0 15c0 2.64.76 5.103 2.073 7.243L0 32l10.06-2.613A16.1 16.1 0 0 0 16 30c8.837 0 16-6.716 16-15S24.837 0 16 0zm0 27.5c-2.32 0-4.56-.6-6.53-1.73l-.47-.27-5.97 1.55 1.6-5.73-.3-.49A12.3 12.3 0 0 1 3.5 15c0-6.34 5.61-11.5 12.5-11.5S28.5 8.66 28.5 15 22.89 27.5 16 27.5zm6.88-8.66c-.38-.19-2.26-1.1-2.61-1.23-.35-.13-.61-.19-.87.19-.26.38-1 1.23-1.23 1.48-.23.26-.46.29-.84.1-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.9-2.23-2.13-2.61-.23-.38-.02-.59.17-.78.17-.17.38-.46.57-.69.19-.23.26-.38.38-.63.13-.26.06-.48-.03-.67-.1-.19-.87-2.09-1.2-2.86-.32-.76-.65-.66-.87-.67l-.74-.01c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2 0 1.89 1.37 3.72 1.56 3.97.19.26 2.7 4.12 6.54 5.78.91.39 1.62.62 2.17.79.91.29 1.74.25 2.4.15.73-.11 2.26-.92 2.58-1.81.32-.89.32-1.65.23-1.81-.1-.16-.35-.26-.73-.45z"/>
-  </svg>
+<!-- Form-->
+
+<div id="solicitar-guincho" class="py-5">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <p>Guincho</p>
+            <h1>Solicitar Atendimento</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+
+                <div class="form-guincho">
+                    <form id="formGuincho">
+
+                        <label>Nome</label>
+                        <input type="text" id="nome" required>
+
+                        <label>Telefone</label>
+                        <input type="tel" id="telefone" required>
+
+                        <label>Tipo de veículo</label>
+                        <select id="veiculo" required>
+                            <option value="">Selecione</option>
+                            <option>Moto</option>
+                            <option>Carro</option>
+                            <option>SUV / Caminhonete</option>
+                            <option>Van / Utilitário leve</option>
+                            <option>Equipamentos até 3.500 kg</option>
+                        </select>
+
+                        <label>Condição do veículo</label>
+                        <select id="condicao">
+                            <option value="">Selecione</option>
+                            <option>Pane mecânica</option>
+                            <option>Pane elétrica</option>
+                            <option>Não liga</option>
+                            <option>Pneu furado</option>
+                            <option>Acidente</option>
+                            <option>Sem combustível</option>
+                            <option>Outro</option>
+                        </select>
+
+                        <button type="button" class="btn-localizacao" onclick="pegarLocalizacao()">
+                            📍 Usar minha localização
+                        </button>
+
+                        <label>CEP</label>
+                        <input type="text" id="cep">
+
+                        <label>Rua / Rodovia</label>
+                        <input type="text" id="rua">
+
+                        <label>Número / KM / Referência</label>
+                        <input type="text" id="numero">
+
+                        <label>Cidade</label>
+                        <input type="text" id="cidade">
+
+                        <label>Estado</label>
+                        <input type="text" id="estado">
+
+                        <label>Destino (para onde levar o veículo)</label>
+                        <input type="text" id="destino">
+
+                        <label>Observações</label>
+                        <textarea id="obs"></textarea>
+
+                        <button type="submit" class="btn-enviar">
+                            🚗 Solicitar Guincho
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form End-->
+
+<!-- Process Start-->
+<div id="process">
+    <div class="container">
+        <div class="section-header">
+            <p>Como Funciona</p>
+            <h1>Atendimento 24h</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="process-col">
+                    <i class="fa fa-phone"></i>
+                    <h2>Solicite Atendimento</h2>
+                    <p>
+                        Entre em contato pelo WhatsApp ou telefone e informe sua localização. Atendimento rápido e direto.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="process-col">
+                    <i class="fa fa-truck-pickup"></i>
+                    <h2>Chegada do Guincho</h2>
+                    <p>
+                        Nossa equipe vai até você com agilidade e segurança para realizar o resgate do veículo.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="process-col">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h2>Destino Seguro</h2>
+                    <p>
+                        Levamos seu veículo até o local desejado com total cuidado e profissionalismo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<div id="video-section">
+            <div class="container">
+                <div class="youtube-player" data-id="LiWdjNG092I"></div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded",
+                    function() {
+                        var div, n,
+                        v = document.getElementsByClassName("youtube-player");
+                        for (n = 0; n < v.length; n++) {
+                            div = document.createElement("div");
+                            div.setAttribute("data-id", v[n].dataset.id);
+                            div.innerHTML = labnolThumb(v[n].dataset.id);
+                            div.onclick = labnolIframe;
+                            v[n].appendChild(div);
+                        }
+                    });
+
+                function labnolThumb(id) {
+                    var thumb = '<img src="img/poster.png">',
+                    play = '<div class="play"></div>';
+                    return thumb.replace("ID", id) + play;
+                }
+
+                function labnolIframe() {
+                    var iframe = document.createElement("iframe");
+                    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+                    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "1");
+                    this.parentNode.replaceChild(iframe, this);
+                }
+            </script>
+        </div>-->
+    </div>
+</div>
+<!-- Process End-->
+
+
+        <!-- Call To Action Start->
+        <div id="call-to-action">
+            <div class="container">
+                <h2>Call To Action</h2>
+                <a class="btn" href="tel:+0123456789">Click Here To Call</a>
+            </div>
+            <img src="img/newsletter-bg.png">
+        </div>
+        <!-- Call To Action End-->
+        
+        
+        <!-- Products Start ->
+        <div id="products">
+            <div class="container">
+                <div class="section-header">
+                    <p>Affordable</p>
+                    <h1>Price</h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-single">
+                            <div class="product-title">
+                                <h2>Drones Basic</h2>
+                                <p>20MP Camera</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img/product-1.png" alt="Product Image">
+                            </div>
+                            <div class="product-footer">
+                                <h3>$199</h3>
+                                <a class="btn" href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-single">
+                            <div class="product-title">
+                                <h2>Drones Silver</h2>
+                                <p>2 Extra Battery</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img/product-2.png" alt="Product Image">
+                            </div>
+                            <div class="product-footer">
+                                <h3>$299</h3>
+                                <a class="btn" href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-single">
+                            <div class="product-title">
+                                <h2>Drones Gold</h2>
+                                <p>Easy Controller</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img/product-3.png" alt="Product Image">
+                            </div>
+                            <div class="product-footer">
+                                <h3>$399</h3>
+                                <a class="btn" href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-single">
+                            <div class="product-title">
+                                <h2>Drones Platinum</h2>
+                                <p>30MP Camera</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img/product-4.png" alt="Product Image">
+                            </div>
+                            <div class="product-footer">
+                                <h3>$499</h3>
+                                <a class="btn" href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products End -->
+        
+        
+        <!-- Testimonial Start ->
+        <div id="testimonial">
+            <div class="container">
+                <div class="section-header">
+                    <p>Customer</p>
+                    <h1>Review</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimonial-slider-nav">
+                            <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
+                            <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
+                            <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
+                            <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimonial-slider">
+                            <div class="slider-item">
+                                <h1>Customer Name</h1>
+                                <h2>Profession</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="slider-item">
+                                <h1>Customer Name</h1>
+                                <h2>Profession</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="slider-item">
+                                <h1>Customer Name</h1>
+                                <h2>Profession</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="slider-item">
+                                <h1>Customer Name</h1>
+                                <h2>Profession</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- FAQ Start ->
+    <div id="faqs">
+        <div class="container">
+            <div class="section-header">
+                <p>Quick</p>
+                <h1>FAQs</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="faqs-text">
+                        <h2>Freequently Asked Questions</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis nisi, sagittis quis arcu eu, luctus cursus ante. Nullam nec diam vitae dolor porta ullamcorper. Duis condimentum ante urna.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis nisi, sagittis quis arcu eu, luctus cursus ante. Nullam nec diam vitae dolor porta ullamcorper. Duis condimentum ante urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                    Lorem ipsum dolor sit amet?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis nisi, sagittis quis arcu eu, luctus cursus ante. Nullam nec diam vitae dolor porta ullamcorper. Duis condimentum ante urna, quis scelerisque velit bibendum eu.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                    Maecenas libero magna accumsan quis?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Maecenas libero magna, accumsan quis urna a, malesuada dictum risus. Duis placerat interdum sodales. Vivamus nec dignissim urna. Nulla tempor enim at viverra tempor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                    Vivamus condimentum pharetra odio at efficitur?
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Vivamus condimentum pharetra odio at efficitur. Pellentesque condimentum erat a sapien maximus, sed tincidunt ante consectetur. In pulvinar blandit sagittis. Fusce a lorem eleifend, ornare sem eu, faucibus ligula.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                    Mauris nec auctor sem?
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Mauris nec auctor sem. In eu dui euismod, bibendum ex id, congue enim. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Start -->
+
+
+    <!-- Contact Start ->
+    <div id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies
+                        </p>
+                        <h3><i class="fa fa-map-marker"></i>123 Drones Tower, Los Angeles, CA, USA</h3>
+                        <h3><i class="fa fa-envelope"></i>email@example.com</h3>
+                        <h3><i class="fa fa-phone"></i>+123-456-7890</h3>
+                        <a class="btn" href="https://htmlcodex.com/contact">Contact Us</a>
+                        <div class="social">
+                            <a href="https://twitter.com/htmlcodex"><i class="fab fa-twitter"></i></a>
+                            <a href="https://facebook.com/htmlcodex"><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Start -->
+
+
+    <!-- Footer Start -->
+    <div id="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>&copy; Copyright <a href="evertonguincho.com.br">Everton Guincho</a>. Todos os direitos reservados</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Desenvolvido por<a href="fernandolabs.com.br"> Fernando Souza</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <a href="https://wa.me/5514996301577?text=Ol%C3%A1%2C%20preciso%20de%20guincho%2024h%20urgente"
+    target="_blank"
+    class="whatsapp-btn"
+    onclick="gtag('event','generate_lead',{'event_category':'whatsapp','event_label':'clique_botao','transport_type':'beacon'});">
+
+    <svg viewBox="0 0 32 32" width="24" height="24">
+        <path fill="white" d="M16 0C7.163 0 0 6.716 0 15c0 2.64.76 5.103 2.073 7.243L0 32l10.06-2.613A16.1 16.1 0 0 0 16 30c8.837 0 16-6.716 16-15S24.837 0 16 0zm0 27.5c-2.32 0-4.56-.6-6.53-1.73l-.47-.27-5.97 1.55 1.6-5.73-.3-.49A12.3 12.3 0 0 1 3.5 15c0-6.34 5.61-11.5 12.5-11.5S28.5 8.66 28.5 15 22.89 27.5 16 27.5zm6.88-8.66c-.38-.19-2.26-1.1-2.61-1.23-.35-.13-.61-.19-.87.19-.26.38-1 1.23-1.23 1.48-.23.26-.46.29-.84.1-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.9-2.23-2.13-2.61-.23-.38-.02-.59.17-.78.17-.17.38-.46.57-.69.19-.23.26-.38.38-.63.13-.26.06-.48-.03-.67-.1-.19-.87-2.09-1.2-2.86-.32-.76-.65-.66-.87-.67l-.74-.01c-.26 0-.67.1-1.02.48-.35.38-1.34 1.31-1.34 3.2 0 1.89 1.37 3.72 1.56 3.97.19.26 2.7 4.12 6.54 5.78.91.39 1.62.62 2.17.79.91.29 1.74.25 2.4.15.73-.11 2.26-.92 2.58-1.81.32-.89.32-1.65.23-1.81-.1-.16-.35-.26-.73-.45z"/>
+    </svg>
 
 </a>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+
+        let latGlobal = "";
+        let lngGlobal = "";
+
+// CEP automático
+        document.getElementById("cep").addEventListener("blur", function() {
+          if(this.disabled) return;
+
+          const cep = this.value.replace(/\D/g, '');
+          if (cep.length !== 8) return;
+
+          fetch(`https://viacep.com.br/ws/${cep}/json/`)
+          .then(res => res.json())
+          .then(data => {
+              document.getElementById("rua").value = data.logradouro || '';
+              document.getElementById("cidade").value = data.localidade || '';
+              document.getElementById("estado").value = data.uf || '';
+          });
+      });
+
+// Localização GPS
+        window.pegarLocalizacao = function() {
+          if (!navigator.geolocation) {
+            alert("Geolocalização não suportada");
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+            latGlobal = position.coords.latitude;
+            lngGlobal = position.coords.longitude;
+
+            const linkMaps = `https://www.google.com/maps/search/?api=1&query=${latGlobal},${lngGlobal}`;
+
+            document.getElementById("rua").value = "📍 Localização via GPS";
+            document.getElementById("numero").value = linkMaps;
+
+            document.getElementById("cep").value = "";
+            document.getElementById("cidade").value = "";
+            document.getElementById("estado").value = "";
+
+            document.getElementById("cep").disabled = true;
+            document.getElementById("rua").disabled = true;
+            document.getElementById("numero").disabled = true;
+            document.getElementById("cidade").disabled = true;
+            document.getElementById("estado").disabled = true;
+
+        }, function() {
+            alert("Não foi possível obter sua localização");
+        });
+    }
+
+// Enviar WhatsApp
+    document.getElementById("formGuincho").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const veiculo = document.getElementById("veiculo").value;
+      const condicao = document.getElementById("condicao").value;
+      const cep = document.getElementById("cep").value;
+      const rua = document.getElementById("rua").value;
+      const numero = document.getElementById("numero").value;
+      const cidade = document.getElementById("cidade").value;
+      const estado = document.getElementById("estado").value;
+      const destino = document.getElementById("destino").value;
+      const obs = document.getElementById("obs").value;
+
+      let localizacao = "";
+      if(latGlobal && lngGlobal){
+        localizacao = 
+        `📍 Localização:
+        https://www.google.com/maps/search/?api=1&query=${latGlobal},${lngGlobal}`;
+    }
+
+    const mensagem =
+    `🚗 SOLICITAÇÃO DE GUINCHO
+👤 Nome: ${nome}
+📞 Telefone: ${telefone}
+🚘 Veículo: ${veiculo}
+⚠️ Condição: ${condicao}
+
+        ${localizacao}
+
+📍 Endereço:
+CEP: ${cep}
+        ${rua}, ${numero}
+        ${cidade} - ${estado}
+
+🏁 Destino:
+        ${destino}
+
+📝 Observações:
+    ${obs}`;
+
+    const numeroWhatsapp = "5514996301577";
+
+    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, "_blank");
+});
+
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const navLinks = document.querySelectorAll(".nav-link, .navbar-nav a");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+
+                if (navbarCollapse.classList.contains("show")) {
+
+                // força fechar (mais agressivo que Bootstrap instance)
+                    navbarCollapse.classList.remove("show");
+                    navbarCollapse.style.height = "0px";
+
+                // também reseta o botão hamburguer
+                    const toggler = document.querySelector(".navbar-toggler");
+                    if (toggler) {
+                        toggler.classList.add("collapsed");
+                        toggler.setAttribute("aria-expanded", "false");
+                    }
+                }
+            });
+        });
+
+    });
+</script>
+
+
 
 </body>
 </html>
